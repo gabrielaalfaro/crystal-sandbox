@@ -1,6 +1,6 @@
-##My first crystal sandbox utility string
+## My first crystal sandbox utility string
 
-###How it works
+### How it works
 
 This component is a string based dictionary utility, which in his first version has the ability to find all of the Dictionary based words in a given unordered String.
 

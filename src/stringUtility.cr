@@ -1,5 +1,9 @@
 class StringUtility
   def findAllPossibleContainedWords(dictionary : Array, word : String)
+    if dictionary.size == 0
+      raise "dictionary cannot be empty"
+    end
+
     matchs = Set(String).new
 
     permutations = findPermutations(word)
@@ -14,7 +18,11 @@ class StringUtility
   end
 
   def findPermutations(word : String)
-    wordCharArray = word.upcase.chars
+    if !word
+      raise "word cannot be nil"
+    end
+
+    wordCharArray = word.downcase.chars
     return findPermutations(wordCharArray, "", Set(Int32).new)
   end
 
