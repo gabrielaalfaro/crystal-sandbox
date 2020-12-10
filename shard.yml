@@ -1,8 +1,8 @@
-name: string_utility
+name: crystal_sandbox
 version: 0.1.0
 
 authors:
-  - your-name-here <your-email-here>
+  - Gabriela Alfaro <galfaro@acuaras.net>
 
 targets:
   string_utility:
