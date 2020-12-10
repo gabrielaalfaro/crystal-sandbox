@@ -12,6 +12,13 @@ Utility doesn't have access to the dictionary whole content, just a method isEng
 Matcher uses a permutation like algorithm which its complexity time is exponential.
 Matcher doesn't have a max complexity limitation, so as more length more time consuming.
 
+## Run Unit Tests
+
+crystal spec
+
+## Run Sample Command Line
+
+crystal src/main.cr
 
 ## Contributors
 
