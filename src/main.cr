@@ -1,14 +1,14 @@
 # TODO: Write documentation for `StringUtility`
-require "./stringUtility"
+require "./string_utility"
 
 module Main
   # Given a word, search all possible dictionary based word using a strategy.
 
   print "[English Words Finder]\n\n"
 
-  dictionaryContent = File.read("./src/resources/englishDictionary.txt")
+  dictionary_content = File.read("./src/resources/custom_english_dictionary.txt")
 
-  dictionary = dictionaryContent.split("\n")
+  dictionary = dictionary_content.split("\n")
 
   print "English Dictionary: #{dictionary.size} words loaded \n"
 
@@ -16,7 +16,7 @@ module Main
 
   word = gets.not_nil!
 
-  matchs = StringUtility.new.findAllPossibleContainedWords(dictionary, word)
+  matchs = StringUtility.new.find_all_possible_contained_words(dictionary, word)
 
   puts "Found #{matchs.size} valid words contained in dictionary.\n #{matchs}"
 end
