@@ -8,7 +8,7 @@ module Main
 
   dictionary_content = File.read("./src/resources/custom_english_dictionary.txt")
 
-  dictionary = dictionary_content.split("\n")
+  dictionary = Set(String).new(dictionary_content.split("\n"))
 
   print "English Dictionary: #{dictionary.size} words loaded \n"
 
