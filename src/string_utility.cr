@@ -13,8 +13,6 @@ class StringUtility
       i += 1
     end
 
-    result = permutations & dictionary
-
-    return result
+    return permutations & dictionary
   end
 end
